@@ -11,21 +11,21 @@
 <body>
     <script>
         /*let a = 5;
-                                                                                                                                                                        console.log(a);
+                                                                                                                                                                                                        console.log(a);
 
-                                                                                                                                                                        let b = new Number(5);
-                                                                                                                                                                        console.log(b);
+                                                                                                                                                                                                        let b = new Number(5);
+                                                                                                                                                                                                        console.log(b);
 
-                                                                                                                                                                        console.log(a == b);
-                                                                                                                                                                        console.log(a === b);
+                                                                                                                                                                                                        console.log(a == b);
+                                                                                                                                                                                                        console.log(a === b);
 
-                                                                                                                                                                        let c = new String('Accio');
-                                                                                                                                                                        console.log(c);
-                                                                                                                                                                        console.log(c.valueOf());
+                                                                                                                                                                                                        let c = new String('Accio');
+                                                                                                                                                                                                        console.log(c);
+                                                                                                                                                                                                        console.log(c.valueOf());
 
-                                                                                                                                                                        let d = new Boolean('true');
-                                                                                                                                                                        console.log(d); 
-                                                                                                                                                                */
+                                                                                                                                                                                                        let d = new Boolean('true');
+                                                                                                                                                                                                        console.log(d); 
+                                                                                                                                                                                                */
 
         /* const a = 5;
         a = 10;
@@ -52,7 +52,7 @@
            }
            console.log(obj1); */
 
-        let x = -1
+        /* let x = -1
         let y = 10
 
         if (x) {
@@ -71,7 +71,50 @@
             console.log('Yes')
         } else {
             console.log('NO')
+        } */
+
+        /*
+	Truthy
+	- Any non zero number
+	- Any non empty string
+	- [], {}
+	Falsy
+	- 0
+	- ''
+	- undefined
+	- null
+	- NaN
+	*/
+
+        // Create an object for marks secured by a student in different subjects, a property to indicate whether pass/fail, hobbies of the student.
+
+        const studentDetails = {
+            english: 82,
+            hindi: 75,
+            maths: 67,
+            science: 89,
+            social: 75,
+            isPass: true,
+            hobbies: ['Swimming', 'Jogging', 'Reading']
         }
+
+        /* Inbuilt object constructors:
+		1. Number
+		2. String
+		3. Boolean
+		To get primitive value out of these typed objects, use the valueOf method
+		*/
+        let a = 5
+        console.log(a)
+
+        let b = new Number(5)
+        console.log(b.valueOf())
+
+        let c = new String('Accio')
+        console.log(c.valueOf())
+
+        let d = new Boolean(true)
+        console.log(d.valueOf())
     </script>
 </body>
 
