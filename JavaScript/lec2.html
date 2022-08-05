@@ -10,6 +10,52 @@
 
 <body>
     <script>
+        // let pranav = {
+        // 	firstName: 'Pranav',
+        // 	lastName: 'Chaudhari',
+        // 	displayFullName: function () {
+        // 		console.log(this.firstName + ' ' + this.lastName)
+        // 	}
+        // }
+
+        // let ram = {
+        // 	firstName: 'Ram',
+        // 	lastName: 'Singh',
+        // 	displayFullName: function () {
+        // 		console.log(this.firstName + ' ' + this.lastName)
+        // 	}
+        // }
+
+        // Object Constructors - Template/ Blueprint for objects
+        // function Student () {
+        // 	this.country = 'India'
+        // 	this.capital = 'Delhi'
+        // }
+
+        // let pavan = new Student()
+        // let rahul = new Student()
+
+        // console.log(pavan)
+        // console.log(rahul)
+
+        /* ------------------------------------------------ */
+
+        function Student(firstName, lastName) {
+            this.firstName = firstName
+            this.lastName = lastName
+            this.displayFullName = function() {
+                console.log(this.firstName + ' ' + this.lastName)
+            }
+        }
+
+        let pavan = new Student('Pavan', 'Kumar')
+        let rahul = new Student('Rahul', 'Jaiswal')
+
+        console.log(pavan)
+        console.log(rahul)
+
+        pavan.displayFullName()
+
         /*let a = 5;
                                                                                                                                                                                                         console.log(a);
 
