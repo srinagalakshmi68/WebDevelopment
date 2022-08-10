@@ -12,10 +12,10 @@
 
 <body>
     <div class="container">
-        <h1 class="display-3 title">Registration Form</h1>
+        <h1 class="display-9 title">Registration Form</h1>
         <form class="row g-3 registration-form">
-            <div class="col-md-4">
-                <label for="first-name" class="form-label">First name</label>
+            <div class="col-md-6">
+                <label for="first-name" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="first-name" autocomplete="off">
                 <div class="valid-feedback" id="first-name-valid">
                     Looks good!
@@ -24,8 +24,8 @@
                     Please enter a valid first name.
                 </div>
             </div>
-            <div class="col-md-4">
-                <label for="last-name" class="form-label">Last name</label>
+            <div class="col-md-6">
+                <label for="last-name" class="form-label">Last Name</label>
                 <input type="text" class="form-control" id="last-name" autocomplete="off">
                 <div class="valid-feedback" id="last-name-valid">
                     Looks good!
@@ -34,7 +34,7 @@
                     Please enter a valid last name.
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <label for="email" class="form-label">Email</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <label for="city" class="form-label">City</label>
                 <input type="text" class="form-control" id="city" autocomplete="off">
                 <div class="valid-feedback" id="city-valid">
@@ -57,7 +57,7 @@
                     Please provide a valid city.
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="state" class="form-label">State</label>
                 <select class="form-select" id="state">
 					<option value="None" selected>Select state ...</option>
@@ -115,6 +115,29 @@
                     Please provide a valid zip.
                 </div>
             </div>
+
+            <div class="col-md-6">
+                <label for="signup-phone" class="form-label">Phone Number</label>
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">+91</span>
+                    </div>
+                    <input type="Number" class="form-control" id="phonenumber" aria-describedby="inputGroupPrepend" autocomplete="off">
+                    <div class="valid-feedback" id="phonenumber-valid">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback" id="phonenumber-invalid">
+                        Please provide a phonenumber
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3 col-md-6">
+                <label for="signup-phone" class="form-label">Resume</label>
+                <input type="file" class="form-control" aria-label="file example" id="resume">
+                <!-- <div class="invalid-feedback">Example invalid form file feedback</div> -->
+            </div>
+
             <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="tnC">
@@ -126,6 +149,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="col-12 submit-btn">
                 <button class="btn btn-dark btn-lg" type="button" onclick="validate()">Submit form</button>
             </div>

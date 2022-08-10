@@ -5,6 +5,8 @@ function validate() {
     let cityInput = document.getElementById('city').value
     let stateInput = document.getElementById('state').value
     let zipInput = document.getElementById('zip').value
+    let phoneNumber = document.getElementById('phonenumber').value
+        //let resume = document.getElementById('resume').value
     let tnCInput = document.getElementById('tnC').checked
 
     let error = false
@@ -69,6 +71,15 @@ function validate() {
         error = true
     }
 
+    if (phoneNumber) {
+        document.getElementById('phonenumber-valid').style.display = 'block'
+        document.getElementById('phonenumber-invalid').style.display = 'none'
+    } else {
+        document.getElementById('phonenumber-valid').style.display = 'block'
+        document.getElementById('phonenumber-invalid').style.display = 'none'
+        error = true
+    }
+
     if (tnCInput) {
         document.getElementById("tnC-invalid").style.display = "none";
     } else {
@@ -84,6 +95,7 @@ function validate() {
         document.getElementById('city').value = ''
         document.getElementById('state').value = 'None'
         document.getElementById('zip').value = ''
+        document.getElementById('phonenumber').value = ''
         document.getElementById('tnC').checked = false
 
         document.getElementById('first-name-valid').style.display = 'none'
@@ -91,7 +103,9 @@ function validate() {
         document.getElementById("email-valid").style.display = "none"
         document.getElementById("city-valid").style.display = "none";
         document.getElementById("zip-valid").style.display = "none";
+        document.getElementById('phonenumber-valid').style.display = "none"
         document.getElementById('state-valid').style.display = "none";
+
     }
 }
 

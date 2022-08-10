@@ -1,9 +1,16 @@
+body {
+    background-color: rgb(234, 243, 243);
+    /* color: white; */
+}
+
 .container {
     margin-top: 30px;
+    /* background-color: teal; */
+    /* background-color: rgb(136, 141, 145); */
 }
 
 .registration-form {
-    width: 900px;
+    width: 60%;
     margin: auto;
 }
 
@@ -13,4 +20,5 @@
 
 .submit-btn {
     text-align: center;
+    margin-bottom: 20px;
 }
