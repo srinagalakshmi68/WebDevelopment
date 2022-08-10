@@ -4,9 +4,10 @@ body {
 }
 
 .container {
+    /* width: 60%; */
     margin-top: 30px;
     /* background-color: teal; */
-    /* background-color: rgb(136, 141, 145); */
+    /* background-color: white; */
 }
 
 .registration-form {

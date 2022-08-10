@@ -75,8 +75,8 @@ function validate() {
         document.getElementById('phonenumber-valid').style.display = 'block'
         document.getElementById('phonenumber-invalid').style.display = 'none'
     } else {
-        document.getElementById('phonenumber-valid').style.display = 'block'
-        document.getElementById('phonenumber-invalid').style.display = 'none'
+        document.getElementById('phonenumber-invalid').style.display = 'block'
+        document.getElementById('phonenumber-valid').style.display = 'none'
         error = true
     }
 
